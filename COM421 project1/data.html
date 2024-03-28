@@ -82,12 +82,12 @@
     <img src = "images/datalesson_fig2.png">
     <figcaption>Values for each variable are entered in a consistent format.</figcaption>
 </figure>
-<p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. This makes the categorical values <b>dichotomous*</b>, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
+<p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. This makes the categorical values <span class="bold">dichotomous*</span>, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
 <ol>
     <li>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</li>
-    <li>In the Formatted_Data sheet, add new columns with <b>Insert > Columns</b> for each distinct value in categorical data columns (<code>tutorial_types, gender, exp_level, task1, task2</code>, and <code>task3</code>). You do not have to add a new column for <code>task1, task2, and task3</code> because their values are already dichotomous.</li>
+    <li>In the Formatted_Data sheet, add new columns with <span class="bold">Insert > Columns</span> for each distinct value in categorical data columns (<code>tutorial_types, gender, exp_level, task1, task2</code>, and <code>task3</code>). You do not have to add a new column for <code>task1, task2, and task3</code> because their values are already dichotomous.</li>
     <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
-    <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <b >Edit > Replace</b>.</li>
+    <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <b >Edit > Replace</span>.</li>
     <li>Your Formatted_Data spreadsheet should now look like Figure 3.</li>   
 </ol>
 <figure>
@@ -99,9 +99,9 @@
 <p>Run descriptive (summary) statistics on the dataset and output results in a new spreadsheet. If necessary, rearrange columns so that data requiring summary, those with continuous values, are adjacent. (In the spreadsheet, the continuous values of <code>perc_enjoy, perc_usefulness</code>, and <code>perc_ease_of_use</code> are already adjacent.)
     Write down the "input range" (i.e. H2:J26) of the data requiring summary, making sure not to include variable labels.</p>
 <ol>
-    <li>Go to <b>Tools > Add-Ins...</b> and make sure <b>Analysis ToolPak</b> is checked. Click OK.</li>
-    <li>Go to <b>Tools > Data Analysis</b> and select <b>Descriptive Statistics</b>. Click OK.
-    <li>Enter the input range in the blank and check <b>Summary Statistics</b>. Click OK.</li>
+    <li>Go to <span class="bold">Tools > Add-Ins...</span> and make sure <span class="bold">Analysis ToolPak</span> is checked. Click OK.</li>
+    <li>Go to <span class="bold">Tools > Data Analysis</span> and select <span class="bold">Descriptive Statistics</span>. Click OK.
+    <li>Enter the input range in the blank and check <span class="bold">Summary Statistics</span>. Click OK.</li>
     </li>
 </ol>
 <p>The descriptive statistics summary will output in a new sheet. Rename this spreadsheet Descriptive_Stats. Label the output according to the variables. For example, <i>Column 1</i> should be <code>perc_enjoy</code>. Your Descriptive_Stats spreadsheet should now look like Figure 4.
@@ -114,12 +114,12 @@
 <h2>Run inferential statistics</h2>
 <p>Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download a 30-day free trial.)</p>
 <ol>
-    <li>When PASW starts, it will prompt you for a data source. Select <b>Open an existing data source > More Files...</b></li>
+    <li>When PASW starts, it will prompt you for a data source. Select <span class="bold">Open an existing data source > More Files...</span></li>
     <li>Set the file type to Excel, then find and open the file.</li>
-    <li>From the list, select the <b>Formatted_Data worksheet</b>. Click OK. You should now see the dataset.</li>
+    <li>From the list, select the <span class="bold">Formatted_Data worksheet</span>. Click OK. You should now see the dataset.</li>
 </ol>
-<p>The most commonly used statistical methods and tests are found under the <b>Analyze</b> menu in the standard toolbar.</p>
-<p>Figure 5 shows where to find some common statistical methods and tests. Under PASW's <b>Analyze</b> menu, see if you can also find the following:</p>
+<p>The most commonly used statistical methods and tests are found under the <span class="bold">Analyze</span> menu in the standard toolbar.</p>
+<p>Figure 5 shows where to find some common statistical methods and tests. Under PASW's <span class="bold">Analyze</span> menu, see if you can also find the following:</p>
 <ol>
     <li>Wilcoxon-Mann-Whitney test</li>
     <li>Simple linear regression</li>
@@ -131,18 +131,18 @@
 </figure> 
 <p>Use your prior knowledge or the <a href="http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm" target="_blank">Choosing the Correct Statistic</a> resource to determine which statistic to run to find whether there is a significant difference in <code>perc_usefulness</code> between <code>free_play</code> and other tutorial types.
 </p>
-<p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to <b>Analyze > Nonparametric Tests > K Independent Samples...</b> A new window will open prompting you to select the variables (by column name) to be tested.</p>
+<p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to <span class="bold">Analyze > Nonparametric Tests > K Independent Samples...</span> A new window will open prompting you to select the variables (by column name) to be tested.</p>
 <ol>
     <li>Select the <code>perc_usefulness</code> variable from the scrollable list on the left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable).</li>
     <li>Select the <code>free_play</code> variable from the scrollable list, and click the bottom arrow to move it to the Grouping Variable section (i.e. independent variable).</li>
-    <li>Click <b>Define Range...</b>, and enter "0" in the Minimum field and "1" in the Maximum field. This specifies the two categorical variables to be tested. Your screen should now look like Figure 6. Click Continue.
+    <li>Click <span class="bold">Define Range...</span>, and enter "0" in the Minimum field and "1" in the Maximum field. This specifies the two categorical variables to be tested. Your screen should now look like Figure 6. Click Continue.
     </li>
 </ol>
 <figure>
     <img src = "images/datalesson_fig6.png">
     <figcaption>For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) are selected.</figcaption>
 </figure> 
-<p>Click OK to display the statistical analysis results to new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <b>File > Export</b>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
+<p>Click OK to display the statistical analysis results to new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <span class="bold">File > Export</span>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
 <figure>
     <img src = "images/datalesson_fig7.png">
     <figcaption>PASW allows users to export statistics to common document types.</figcaption>
