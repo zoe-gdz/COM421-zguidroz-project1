@@ -12,9 +12,11 @@ h3{
 }
 body{
     font-family: 'Lucida Sans', sans-serif;
-    font-size: 1.04em; 
-   
-    
+    font-size: 1.04em;           
+}
+
+.bold{
+    font-weight: bold;
 }
 /* images */
 figure{
@@ -82,7 +84,7 @@ aside {
     float: right;
     width: 20%;
     padding: 20px;
-    margin-left: auto;
+    margin-left: auto; /*always to the left completely*/
     background-color: #f9f9f9;
     border: 1px solid #ccc;
 }
